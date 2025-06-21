@@ -1,7 +1,8 @@
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
-open class SmartDevice(val name: String, val category: String) {
+open class SmartDevice(val name: String, val category: String) { 
+    // open class is also superclass, means bairer kono class eta theke inherit korte parbe, by default class final thake
 
     var deviceStatus = "online"
         protected set
