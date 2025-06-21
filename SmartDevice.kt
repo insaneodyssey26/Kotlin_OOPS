@@ -9,6 +9,7 @@ open class SmartDevice(val name: String, val category: String) {
         // protected set mane only this class and etar subclass ei variable ta modify (set) korte parbe
 
     open val deviceType = "unknown"
+    // val mane read-only (can't be modified), but 'open val' hole jekono subclass theke etar value modify (override) kora jabe
 
     open fun turnOn() {
         deviceStatus = "on"
