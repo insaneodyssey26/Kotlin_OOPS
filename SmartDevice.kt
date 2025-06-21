@@ -27,6 +27,7 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     override val deviceType = "Smart TV"
 
     private var speakerVolume by RangeRegulator(initialValue = 2, minValue = 0, maxValue = 100)
+    // private var, mane only SmartTvDevice class eta k access korte parbe, others kono class parbe na 
 
     private var channelNumber by RangeRegulator(initialValue = 1, minValue = 0, maxValue = 200)
 
