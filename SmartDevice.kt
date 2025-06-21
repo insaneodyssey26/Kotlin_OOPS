@@ -14,6 +14,7 @@ open class SmartDevice(val name: String, val category: String) {
     open fun turnOn() {
         deviceStatus = "on"
     }
+    // open function mane kono subclass theke function ki kaj korbe seta modify kora jabe
 
     open fun turnOff() {
         deviceStatus = "off"
