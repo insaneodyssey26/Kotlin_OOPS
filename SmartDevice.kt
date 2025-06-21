@@ -30,6 +30,7 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     // private var, mane only SmartTvDevice class eta k access korte parbe, others kono class parbe na 
 
     private var channelNumber by RangeRegulator(initialValue = 1, minValue = 0, maxValue = 200)
+    // RangeRegulator, barbar get() set() use na kore delegate use kora hoy
 
     fun increaseSpeakerVolume() {
         speakerVolume++
