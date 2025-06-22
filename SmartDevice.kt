@@ -151,6 +151,7 @@ class RangeRegulator(
 
 fun main() {
     var smartDevice: SmartDevice = SmartTvDevice("Android TV", "Entertainment")
+    // smartDevice is the varible, SmartDevice is a reference of type SmartDevice
     smartDevice.turnOn()
 
     smartDevice = SmartLightDevice("Google Light", "Utility")
