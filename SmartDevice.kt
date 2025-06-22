@@ -82,7 +82,7 @@ class SmartLightDevice(deviceName: String, deviceCategory: String) :
     }
 }
 
-class SmartHome(
+class SmartHome(  // SmartTvDevice, SmartLightDevice er property gulo SmartHome er read-only property gulo te store (maybe copy) hocche, not sure properly
     val smartTvDevice: SmartTvDevice,
     val smartLightDevice: SmartLightDevice
 ) {
