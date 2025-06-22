@@ -132,7 +132,7 @@ class SmartHome(  // SmartTvDevice, SmartLightDevice er property gulo SmartHome 
 class RangeRegulator(
     initialValue: Int,
     private val minValue: Int,
-    private val maxValue: Int
+    private val maxValue: Int  // minValue, maxValue are private val (read-only), also private bole only RangeRegulator class tai eder access korte parbe, also type-safety is used here too
 ) : ReadWriteProperty<Any?, Int> {
 
     var fieldData = initialValue
