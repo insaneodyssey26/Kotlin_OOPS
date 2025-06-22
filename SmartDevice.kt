@@ -25,6 +25,7 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     SmartDevice(name = deviceName, category = deviceCategory) {
 
     override val deviceType = "Smart TV"
+    // age deviceType 'open val' chilo, so akhon otar value modify kora hocche using override
 
     private var speakerVolume by RangeRegulator(initialValue = 2, minValue = 0, maxValue = 100)
     // private var, mane only SmartTvDevice class eta k access korte parbe, others kono class parbe na 
