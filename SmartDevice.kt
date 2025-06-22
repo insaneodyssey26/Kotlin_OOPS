@@ -133,7 +133,7 @@ class RangeRegulator(
     initialValue: Int,
     private val minValue: Int,
     private val maxValue: Int  // minValue, maxValue are private val (read-only), also private bole only RangeRegulator class tai eder access korte parbe, also type-safety is used here too
-) : ReadWriteProperty<Any?, Int> {
+) : ReadWriteProperty<Any?, Int> {  // ReadWriteProperty use hoyeche, Int> mane holo, RangeRegulator is a delegate for Int properties
 
     var fieldData = initialValue
 
