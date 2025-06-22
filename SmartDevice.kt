@@ -89,6 +89,7 @@ class SmartHome(  // SmartTvDevice, SmartLightDevice er property gulo SmartHome 
 
     var deviceTurnOnCount = 0
         private set
+        // deviceTurnOnCount is mutable, but private set howa mane only setter function ta private hoye gelo, means only SmartHome class eta modify korte parbe
 
     fun turnOnTv() {
         deviceTurnOnCount++
