@@ -142,6 +142,7 @@ class RangeRegulator(
     }
 
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: Int) {
+        // KProperty holds metadatas of properties
         if (value in minValue..maxValue) {
             fieldData = value
         }
