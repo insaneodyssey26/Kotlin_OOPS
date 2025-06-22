@@ -44,7 +44,7 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     }
 
     override fun turnOn() {
-        super.turnOn()
+        super.turnOn()  // super mane age 'open fun turnOn chilo' (superclass turnOn), ota call korche, oi superclass ta k
         println(
             "$name is turned on. Speaker volume is set to $speakerVolume and channel number is " +
                 "set to $channelNumber."
